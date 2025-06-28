@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6de6ed, #2193b0);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.todo-container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-btn, #clear-all-btn {
+    background-color: #28a745;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.filter-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.task-date {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
